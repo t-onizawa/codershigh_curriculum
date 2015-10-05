@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #ff6900;
+}
+.btn {
+    border: 0;
+    outline: 0;
+    background-color: #1f9aee;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: .8;
+}
+.btn + .btn {
+    margin-top: 10px;
+}
+
+
+.box.is-gray {
+    background-color: #999 !important;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,531 @@
+@charset "utf-8";
+
+/* =======================================================
+/* RESET CSS
+/* =======================================================*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =======================================================
+/* BASE CSS
+/* =======================================================*/
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #333;
+}
+a,
+a:active,
+a:visited {
+	color: #1d3994;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	width: 950px;
+	margin: 0 auto;
+}
+
+/* =======================================================
+/* HEADER
+/* =======================================================*/
+.header {
+	border-top: 1px solid #ccc;
+}
+.header-help {
+	text-align: right;
+}
+.header-main {
+	border-top: 1px solid #ddd;
+	padding: 5px 100px;
+	overflow: hidden;
+}
+
+.header-logo {
+	float: left;
+	margin: 0 47px;
+}
+.header-nav-left,
+.header-nav-right {
+	float: left;
+	overflow: hidden;
+	margin-top: 5px;
+}
+.header-nav-left li,
+.header-nav-right li {
+	float: left;
+	margin-left: 25px;
+}
+.header-nav-left li:first-child,
+.header-nav-right li:first-child {
+	margin-left: 0;
+}
+.header-nav-left a,
+.header-nav-right a {
+	display: block;
+	width: 54px;
+	padding-top: 44px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-size: 10px;
+	text-align: center;
+	letter-spacing: -1px;
+}
+.icon-nav-travel {
+	background-image: url(/img/icon_travel.png);
+}
+.icon-nav-auction {
+	background-image: url(/img/icon_auction.png);
+}
+.icon-nav-shopping {
+	background-image: url(/img/icon_cart.png);
+}
+.icon-nav-myyahoo {
+	background-image: url(/img/icon_my.png);
+}
+.icon-nav-box {
+	background-image: url(/img/icon_box.png);
+}
+.icon-nav-mail {
+	background-image: url(/img/icon_mail.png);
+}
+
+.header-search {
+	border: 1px solid #beccea;
+	background-color: #f1f5ff;
+	padding: 18px 199px;
+	overflow: hidden;
+}
+.header-search input[type="text"] {
+	float: left;
+	width: 400px;
+	height: 34px;
+	line-height: 34px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.header-search button {
+	float: left;
+	width: 140px;
+	height: 34px;
+	line-height: 34px;
+	margin-left: 10px;
+	padding: 0;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	outline: 0;
+	border: 0;
+	background-color: #4070ff;
+}
+.header-search button:hover {
+	background-color: #059eea;
+}
+
+/* =======================================================
+/* CONTENTS
+/* =======================================================*/
+.contents-top-link {
+	text-align: center;
+	padding: 3px 0;
+}
+.contents-top-link li {
+	display: inline-block;
+	margin-left: 20px;
+}
+.contents-top-link li:first-child {
+	margin-left: 0;
+}
+.contents-top-link a:before {
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 9px;
+	margin-right: 3px;
+	background-image: url(/img/icon_arrow.png);
+}
+
+.contents-main {
+	overflow: hidden;
+}
+
+/* ------------------
+/* MAIN LEFT
+/* ------------------*/
+.contents-main-left {
+	float: left;
+	width: 168px;
+}
+.side-nav {
+	border: 1px solid #9eb4db;
+	margin-top: 10px;
+}
+.side-nav:first-child {
+	margin-top: 0;
+}
+.side-nav-head-wrap {
+	border-bottom: 1px solid #6e87b5;
+	position: relative;
+}
+.side-nav-head-wrap:before {
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 8px;
+	width: 4px;
+	height: 6px;
+	background-color: #7F93AD;
+}
+.side-nav-head-wrap:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	border: 6px solid transparent;
+	border-top-color: #7F93AD;
+}
+.side-nav-head {
+	border-left: 1px solid #cedaf3;
+	margin-left: 20px;
+	padding: 2px 5px;
+}
+.side-nav-head-more {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	font-size: 10px;
+	line-height: 10px;
+	padding: 2px;
+	border: 1px solid #b7b7b7;
+}
+.side-nav-service {
+	background-color: #e6ecfe;
+	padding: 5px;
+}
+.side-nav-service li {
+	margin-top: 2px;
+}
+.side-nav-service li:first-child {
+	margin-top: 0;
+}
+.side-nav-service a {
+	display: inline-block;
+	vertical-align: middle;;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 25px;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.icon-side-shopping {
+	background-image: url(/img/icon_side_01.png);
+}
+.icon-side-auction {
+	background-image: url(/img/icon_side_02.png);
+}
+.icon-side-lohaco {
+	background-image: url(/img/icon_side_03.png);
+}
+.icon-side-travel {
+	background-image: url(/img/icon_side_04.png);
+}
+.icon-side-news {
+	background-image: url(/img/icon_side_05.png);
+}
+.icon-side-weather {
+	background-image: url(/img/icon_side_06.png);
+}
+.icon-side-sports {
+	background-image: url(/img/icon_side_07.png);
+}
+.icon-side-finance {
+	background-image: url(/img/icon_side_08.png);
+}
+.icon-side-tv {
+	background-image: url(/img/icon_side_09.png);
+}
+.icon-side-gyao {
+	background-image: url(/img/icon_side_10.png);
+}
+.icon-side-game {
+	background-image: url(/img/icon_side_11.png);
+}
+.icon-side-mobage {
+	background-image: url(/img/icon_side_12.png);
+}
+.icon-side-map {
+	background-image: url(/img/icon_side_13.png);
+}
+.icon-side-train {
+	background-image: url(/img/icon_side_14.png);
+}
+.icon-side-tabelog {
+	background-image: url(/img/icon_side_15.png);
+}
+.icon-side-job {
+	background-image: url(/img/icon_side_16.png);
+}
+.icon-side-estate {
+	background-image: url(/img/icon_side_17.png);
+}
+.icon-side-car {
+	background-image: url(/img/icon_side_18.png);
+}
+.icon-side-board {
+	background-image: url(/img/icon_side_19.png);
+}
+.icon-side-blog {
+	background-image: url(/img/icon_side_20.png);
+}
+.icon-side-beauty {
+	background-image: url(/img/icon_side_21.png);
+}
+.icon-side-dating {
+	background-image: url(/img/icon_side_22.png);
+}
+.icon-side-cookpad {
+	background-image: url(/img/icon_side_23.png);
+}
+
+.side-nav-other {
+	background-color: #e6ecfe;
+	border-top: 1px solid #cedaf3;
+	padding: 5px 8px;
+}
+.side-nav-other:first-child {
+	border-top: 0;
+}
+.side-nav-other > li {
+	margin-top: 3px;
+}
+.side-nav-other > li:first-child {
+	margin-top: 0;
+}
+.side-nav-inner-list {
+	overflow: hidden;
+}
+.side-nav-inner-list li {
+	float: left;
+	margin-left: 10px;
+}
+.side-nav-inner-list li:first-child {
+	margin-left: 0;
+}
+
+/* ------------------
+/* MAIN CENTER
+/* ------------------*/
+.contents-main-center {
+	float: left;
+	width: 410px;
+	margin-left: 10px;
+}
+.main-news {
+	border: 1px solid #9eb4db;
+}
+.main-news-head {
+	padding: 2px 10px;
+	font-weight: bold;
+}
+.main-news-pickup {
+	margin-top: 5px;
+	padding: 0 7px;
+	overflow: hidden;
+}
+.main-news-pickup p {
+	font-size: 10px;
+	color: #777;
+}
+.main-news-list-wrap {
+	float: left;
+	width: 245px;
+}
+.main-news-list {
+	list-style: disc;
+	padding-left: 20px;
+}
+.main-news-img-wrap {
+	float: right;
+	width: 140px;
+	border: 1px solid #dde3ea;
+	background-color: #f0f3f7;
+	box-sizing: border-box;
+
+}
+.main-news-img-wrap a {
+	display: block;
+	padding: 9px 10px;
+}
+.main-news-img-wrap a:hover {
+	text-decoration: none;
+}
+.main-news-img-wrap img {
+	display: block;
+	margin: 0 auto;
+}
+.main-news-img-head {
+	margin: 2px 0 5px;
+	color: #1d3994 !important;
+	font-size: 12px !important;
+}
+.main-news-more {
+	overflow: hidden;
+	padding: 5px 10px;
+}
+.main-news-more li {
+	float: left;
+	margin-left: 10px;
+}
+.main-news-more li:first-child {
+	margin-left: 0;
+}
+.main-bnr {
+	margin-top: 10px;
+}
+
+/* ------------------
+/* MAIN RIGHT
+/* ------------------*/
+.contents-main-right {
+	float: right;
+	width: 350px;
+}
+.main-login {
+	margin-top: 10px;
+	border: 1px solid #9eb4db;
+	padding: 5px;
+	background-color: #e6ecfe;
+}
+.main-login-register {
+	overflow: hidden;
+}
+.main-login-register-txt {
+	float: left;
+}
+.main-login-register-link {
+	float: right;
+	overflow: hidden;
+}
+.main-login-register-link li {
+	float: left;
+	margin-left: 5px;
+}
+.main-login-register-link li:first-child {
+	margin-left: 0;
+}
+.main-login-register-link a {
+	color: #1d3994;
+	border: 1px solid #b7b7b7;
+	padding: 2px;
+	font-size: 10px;
+	background-color: #fff;
+}
+.main-login-mail {
+	border: 1px solid #9eb4db;
+	margin-top: 5px;
+	padding: 6px 0 6px 50px;
+	background-color: #fff;
+	background-image: url(/img/icon_mailbox.png);
+	background-repeat: no-repeat;
+	background-position: 3px center;
+}
+.main-pr {
+	margin-top: 10px;
+	border: 1px solid #9eb4db;
+	padding: 5px;
+	background-color: #e6ecfe;
+}
+.main-pr-head {
+	font-weight: bold;
+}
+.main-pr-list {
+	list-style: disc;
+	padding-left: 18px;
+	margin-top: 10px;
+}
+.main-pr-list li {
+	margin-top: 3px;
+}
+.main-pr-list li:first-child {
+	margin-top: 0;
+}
+.main-pr-link {
+	text-align: right;
+	margin-top: 10px;
+	font-size: 10px;
+}
+
+/* =======================================================
+/* FOOTER
+/* =======================================================*/
+.footer {
+	margin-top: 40px;
+	padding: 10px 0;
+	border-top: 1px solid #d0d8e1;
+	text-align: center;
+}
+.footer-link li {
+	line-height: 1.7;
+	display: inline-block;
+}
+.footer-link li:before {
+	content: " ー ";
+}
+.footer-link li:first-child:before {
+	content: "";
+}
+.copyright {
+	font-size: 10px;
+	margin-top: 4px;
+}

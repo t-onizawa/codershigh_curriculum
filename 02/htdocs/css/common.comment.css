@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* ↑ 文字コードの宣言 */
+
+/* すべての要素(*)のmarginとpaddingを0にリセット。 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* リストについてしまうスタイルを消す。 */
+ul, li {
+	list-style: none;
+}
+
+/* 初期時に画像を囲うdivについてしまう、すき間を消す。 */
+img {
+	vertical-align: middle;
+}
+
+/* wrapperクラスの幅を設定、画面の中央に配置する。 */
+.wrapper {
+	width: 950px;
+	margin: 0 auto 0 auto;
+}
+
+/* サイド・メイン・PRを左寄せに並べる。 */
+.contents-inner-side,
+.contents-inner-main,
+.contents-inner-pr {
+	float: left;
+}
+
+/*
+   サイド・メイン・PRを左寄せにしたことにより、
+   サイド・メイン・PRを囲うcontents-innerクラスが自らの高さを認知できなくなり、
+   崩れの原因になるため、下記方法で回避する。
+*/
+.contents-inner {
+	overflow: hidden;
+}
+
+/* メイン・PRの左側にmarginをつけて距離をとる。 */
+.contents-inner-main,
+.contents-inner-pr {
+	margin: 0 0 0 9px;
+}
+
+/* side-sectionクラス, main-sectionクラス、pr-sectionクラスの上部分にmarginをつけて距離をとる。 */
+.side-section,
+.main-section,
+.pr-section {
+	margin: 10px 0 0 0;
+}
+
+/*
+	先ほど上部分にmarginをつけたが、一番上にある要素にはmarginはいらない。
+	:first-child（最初の要素を指す）に対してmarginを0にする。
+*/
+.side-section:first-child,
+.main-section:first-child,
+.pr-section:first-child {
+	margin: 0;
+}
+
+
+
+
+

@@ -1,0 +1,582 @@
+@charset "utf-8";
+
+/* ========================================
+ RESET CSS
+=========================================== */
+/*
+html5doctor.com Reset Stylesheet
+v1.4
+2009-07-27
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+body {
+	line-height:1;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+	display:block;
+}
+
+ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+a {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+
+mark {
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom:1px dotted #000;
+	cursor:help;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+
+/* ========================================
+ BASE
+=========================================== */
+/***********************************************************************/
+/* 全体設定 */
+/*
+・作業内容
+全体に設定するためbody要素に対して行う
+
+1. 全体の文字の種類を設定
+2. 全体の文字のサイズを指定
+3. 全体の文字の行間を指定
+*/
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif; /* 1. 文字種類: 〜 */
+	font-size: 16px;         /* 2. 文字サイズ: 16px */
+	line-height: 1.6;        /* 3. 行間: 1.6 (1で改行された場合、行間がなくなる) */
+
+	color: #666;
+}
+/* 全体設定 ここまで */
+/*************************************************************************/
+
+
+
+/*/!* -----------------------*/
+ /*Header*/
+/*-------------------------- *!/*/
+/*/!***********************************************************************!/*/
+/*/!* ヘッダー *!/*/
+/*/!**/
+/*作業内容*/
+/*1. 背景色を設定*/
+/*2. 下線を作成*/
+/*3. ロゴ画像(.header-logo img)の大きさを設定*/
+/*4. 余白を調整*/
+/**!/*/
+.header {
+	background-color: #0ba1eb;         /* 1, 背景色: #0ba1eb */
+	border-bottom: 2px solid #ccc;     /* 2. 下線: 2px 直線 #ccc */
+	padding: 5px 10px 5px 10px;        /* 4. 余白: ↑5px →10px ↓5px ←10px */
+}
+.header-logo img {
+	width: 130px;                      /* 3. 幅: 150px */
+	vertical-align: middle;
+}
+/*/!* ヘッダー ここまで *!/*/
+/*/!*************************************************************************!/*/
+
+
+
+/*/!* -----------------------*/
+ /*Footer*/
+/*-------------------------- *!/*/
+
+/*/!* ========================================*/
+ /*PAGE*/
+/*=========================================== *!/*/
+/*/!* ---------------------*/
+/*TOP*/
+/*----------------------- *!/*/
+
+
+/*/!***********************************************************************!/*/
+/*/!* メインキービジュアル *!/*/
+/*/!**/
+/*・作業内容*/
+/*1. 画像(.top-kv img)をウィンドウいっぱいにする。*/
+/*2. ウィンドウサイズを変えると画像(.top-kv img)の高さも変わってしまうので、*/
+   /*画像を囲むdiv(.top-kv)の高さを固定する。*/
+/*3. div(.top-kv)から画像のはみ出した部分を見せないようにする。*/
+/*4. 文字部分(.top-kv-catch)を中央配置にするため、絶対配置にする宣言をする。*/
+/*5. 絶対配置をするために基準となる親要素を設定する。*/
+/*6. 絶対配置にした要素(.top-kv-catch)に中身(青い空と海の画像)の幅を設定*/
+/*7. 絶対配置にした要素(.top-kv-catch)に上からの位置を設定する*/
+/*8. 絶対配置にした要素(.top-kv-catch)に左からの位置を設定する*/
+/*9. 絶対配置にした要素(.top-kv-catch)の幅と高さの半分をmarginでマイナス設定する。*/
+   /*(上50%,左50%にしたが.top-kv-catchの左上が起点になっているので位置を調整するため)*/
+/**!/*/
+.top-kv {
+	height: 360px;              /* 2. 高さ: 360px */
+	overflow: hidden;           /* 3. はみ出し: 隠す */
+	position: relative;         /* 5. ポジション: 絶対配置の基準 */
+}
+.top-kv img {
+	width: 100%;                /* 1. 幅: 100% */
+}
+.top-kv-catch {
+	width: 294px;               /* 6. 幅: 294px */
+	position: absolute;         /* 4. ポジション: 絶対配置 */
+	top: 50%;                   /* 7. 上からの位置: 50% */
+	left: 50%;                  /* 8. 左からの位置: 50% */
+	margin: -46px 0 0 -147px;   /* 9. マージン: ↑-46px →0 ↓0 ←-147px */
+}
+/*/!* メインキービジュアル ここまで *!/*/
+/*/!*************************************************************************!/*/
+
+
+
+/*/!***********************************************************************!/*/
+/*/!* セクション 説明文タイプ *!/*/
+/*/!**/
+/*・作業内容*/
+/*1. セクション(.top-sec)の幅を指定*/
+/*2. セクション(.top-sec)を画面の中央に寄せる*/
+/*3. セクション(.top-sec)の余白を調整*/
+/*4. 見出し(.top-sec-head)の文字サイズを指定*/
+/*5. 見出し(.top-sec-head)の文字の太さを指定*/
+/*6. 段落(.top-sec-text)の文字サイズを指定*/
+/*7. 段落(.top-sec-text)のマージンを設定*/
+/*8. 最初の段落(.top-sec-textと.top-sec-text-firstをついているpタグ)のマージンを設定*/
+/**!/*/
+.top-sec {
+	width: 960px;               /* 1. 幅: 960px */
+	margin: 0 auto 0 auto;      /* 2. マージン: ↑0 →auto ↓0 ←auto 左と右をautoにすると中央に寄る */
+	padding: 40px 0 50px 0;     /* 3. 余白: ↑40px →0 ↓50px ←0 */
+}
+.top-sec-head {
+	font-size: 24px;            /* 4. 文字サイズ: 24px */
+	font-weight: bold;          /* 5. 文字太さ: 太く */
+}
+.top-sec-text {
+	font-size: 18px;            /* 6. 文字サイズ: 18px */
+	margin: 20px 0 0 0;         /* 7. マージン: ↑20px →0 ↓0 ←0  */
+}
+.top-sec-text.top-sec-text-first {
+	margin: 25px 0 0 0;         /* 8. マージン: ↑25px →0 ↓0 ←0 */
+}
+/*/!* セクション 説明文タイプ ここまで *!/*/
+/*/!*************************************************************************!/*/
+
+
+/*/!***********************************************************************!/*/
+/*/!* セクション ビジュアル *!/*/
+/*/!**/
+/*・作業内容*/
+/*1. 画像(.top-sec-kv img)をウィンドウいっぱいにする。*/
+/*2. ウィンドウサイズを変えると画像(.top-sec-kv img)の高さも変わってしまうので、*/
+   /*画像を囲むdiv(.top-sec-kv)の高さを固定する。*/
+/*3. div(.top-sec-kv)から画像のはみ出した部分を見せないようにする。*/
+/**!/*/
+.top-sec-kv {
+	height: 200px;             /* 2. 高さ: 200px */
+	overflow: hidden;          /* 3. はみ出し: 隠す */
+}
+.top-sec-kv img {
+	width: 100%;               /* 1. 幅: 100% */
+}
+/*/!* セクション ビジュアル ここまで *!/*/
+/*/!*************************************************************************!/*/
+
+
+
+/*/!***********************************************************************!/*/
+/*/!* セクション リストタイプ *!/*/
+/*/!**/
+/*・作業内容*/
+/*1. リストの見出しからのマージンを設定*/
+/*2. 各リスト(.top-sec-list li)を左寄せに設定*/
+/*3. 各リストを左寄せにしたので親要素(.top-sec-list)におまじないを指定(floatをつけた親要素にはつけること)*/
+/*4. 各リスト(.top-sec-list li)の幅を設定*/
+/*5. 各リスト間のマージンを指定*/
+/*6. 最初のリスト(.top-sec-list li:first-child)の左マージンがいらないので上書きする*/
+/*7. 各リストの見出し(.top-sec-list-head)の文字サイズを指定*/
+/*8. 各リストの見出しの文字の太さを指定*/
+/*9. 各リストの段落テキスト(.top-sec-list-text)のマージンを設定*/
+/**!/*/
+.top-sec-list {
+	margin: 25px 0 0 0;        /* 1. マージン: ↑25px →0 ↓0 ←0 */
+	overflow: hidden;          /* 3. はみ出し: 隠す(floatのおまじない) */
+}
+.top-sec-list li {
+	float: left;               /* 2. 横並び: 左 */
+	width: 300px;              /* 4. 幅: 300px */
+	margin: 0 0 0 30px;        /* 5. マージン: ↑0 →0 ↓0 ←30px */
+}
+.top-sec-list li:first-child {
+	margin: 0;                 /* 6. マージン: すべて0 */
+}
+.top-sec-list-head {
+	font-size: 20px;           /* 7. 文字サイズ: 20px */
+	font-weight: bold;         /* 8. 文字の太さ: 太く */
+}
+.top-sec-list-text {
+	margin: 15px 0 0 0;        /* 9. マージン: ↑15px →0 ↓0 ←0 */
+}
+
+/*/!* セクション リストタイプ ここまで *!/*/
+/*/!*************************************************************************!/*/
+
+
+/*/!***********************************************************************!/*/
+/*/!* セクション ビジュアル 背景画像で読み込み *!/*/
+/*/!**/
+/*・作業内容*/
+/*1. 背景として画像の読み込み */
+/*2. 背景画像の読み込みサイズを指定 */
+/*3. 表示部分の幅を指定 */
+/*4. 表示部分の高さを指定 */
+.top-sec-kv-bg {
+	background-image: url(/img/top/sea_02.jpg);    /* 1. 背景画像: urlで指定 */
+	background-size: cover;                        /* 2. 背景画像サイズ: 要素に合わせる */
+	width: 100%;                                   /* 3. 幅: 100% */
+	height: 200px;                                 /* 4. 高さ: 200px */
+}
+/*/!* セクション ビジュアル 背景画像で読み込み ここまで *!/*/
+/*/!*************************************************************************!/*/
+
+/*/!***********************************************************************!/*/
+/*/!* セクション 交通情報部分 *!/*/
+/*/!**/
+/*・作業内容*/
+/*1. 写真とテキストを囲う部分.top-sec-trafficと見出し部分のマージンを指定 */
+/*2. 写真を囲う.top-sec-trainに横並び(左)を指定 */
+/*3. テキストを囲う.top-sec-traffic-textに横並び(右)を指定 */
+/*4. 写真とテキストを囲う部分.top-sec-trafficにフロートとした要素の親としてのおまじないを指定 */
+/*5. 写真を囲う.top-sec-trainに幅を指定 */
+/*6. テキストを囲う.top-sec-traffic-textに幅を指定 */
+/*7. テキスト部分.top-sec-traffic-textの定義リストのdtの文字サイズを指定 */
+/*8. テキスト部分.top-sec-traffic-textの定義リストのdtの文字の太さを指定 */
+/*9. テキスト部分.top-sec-traffic-textの定義リストのdtのマージンを指定 */
+/*10. テキスト部分.top-sec-traffic-textの定義リストの最初のdtのマージンを0に */
+/*11. テキスト部分.top-sec-traffic-textの定義リストのddのマージンを指定 */
+/*12. リンク部分.traffic-linkに絶対配置を宣言 */
+/*13. 写真とテキストを囲う部分.top-sec-trafficにリンク部分.traffic-linkの絶対配置の基準を指定 */
+/*14. リンク部分.traffic-linkの右位置を指定 */
+/*15. リンク部分.traffic-linkの↓位置を指定 */
+/*16. リンク部分.traffic-linkのaにbefore要素を作成 */
+/*17. リンク部分.traffic-linkのaにbefore要素のブロック状態を指定 */
+/*18. リンク部分.traffic-linkのaにbefore要素のボーダーを透明で作成 */
+/*19. リンク部分.traffic-linkのaにbefore要素のボーダーの左の色を指定 */
+.top-sec-traffic {
+	margin: 25px 0 0 0;           /* 1. マージン: ↑25px →0 ↓0 ←0 */
+	overflow: hidden;             /* 4. フロートの親のおまじない */
+	position: relative;           /* 13. ポジション: 基準 */
+}
+.top-sec-train {
+	float: left;                  /* 2. 横並び: 左 */
+	width: 220px;                 /* 5. 幅: 220px */
+}
+.top-sec-traffic-text {
+	float: right;                 /* 3. 横並び: 右 */
+	width: 700px;                 /* 6. 幅: 700px */
+}
+.top-sec-traffic-text dt {
+	font-size: 18px;              /* 7. 文字サイズ: 18px */
+	font-weight: bold;            /* 8. 文字の太さ: 太く */
+	margin: 30px 0 0 0;           /* 9. マージン: ↑30px →0 ↓0 ←0 */
+}
+.top-sec-traffic-text dt:first-child {
+	margin: 0;                    /* 10. マージン: すべて0 */
+}
+.top-sec-traffic-text dd {
+	margin: 20px 0 0 0;           /* 11. マージン: ↑20px →0 ↓0 ←0 */
+}
+
+.traffic-link {
+	position: absolute;           /* 12. ポジション: 絶対配置 */
+	right: 0;                     /* 14. 右から: 0 */
+	bottom: 0;                    /* 15. 下から: 0 */
+}
+.traffic-link a:before {
+	content: "";                    /* 16. content: ""(before・after要素には必要) */
+  	display: inline-block;          /* 17. display状態: そのものの要素の大きさをブロックとする */
+  	border: 6px solid transparent;  /* 18. border: 6px 直線 透明 */
+  	border-left-color: #059eea;     /* 19. border-left-color: #059eea */
+}
+/*/!* セクション 交通情報部分 ここまで *!/*/
+/*/!*************************************************************************!/*/
+
+
+/*/!***********************************************************************!/*/
+/*/!* フッター *!/*/
+/*/!**/
+/*・作業内容*/
+/*1. 背景色を指定 */
+/*2. 余白を指定 */
+/*3. .footer-inner部分の幅を指定 */
+/*4. .footer-inner部分を真ん中に配置 */
+/*5. .footer内のアンカーテキスト(aタグ)の色を指定 */
+/*6. .footer内のアンカーテキスト(aタグ)の下線をなしに */
+/*7. .footer-infoを左寄せに配置 */
+/*8. .footer-infoの幅を指定 */
+/*9. .footer-infoの親(.footer-contents)にoverflow: hiddenを指定*/
+/*10. .footer-info liを左寄せに配置 */
+/*11. .footer-info liの幅を指定 */
+/*12. .footer-info liの親(.footer-info)にoverflow: hiddenを指定*/
+/*13. .footer-snsを左寄せに配置 */
+/*14. .footer-snsの幅を指定 */
+/*15. .footer-sns liを左寄せに配置 */
+/*16. .footer-sns liの幅を指定 */
+/*17. .footer-sns liの親(.footer-sns)にoverflow: hiddenを指定*/
+/*18. .footer-sns liのマージンを指定*/
+/*19. .footer-sns liの最初の要素のみマージンを0に*/
+
+/*20. Twitterアイコンを設定 */
+/*21. Facebookアイコンを設定 */
+/*22. Google plusアイコンを設定 */
+/*23. コピーライトのスタイルを設定 */
+
+.footer {
+	background-color: #232323;   /* 1. 背景色: #232323 */
+	padding: 40px 0 40px 0;      /* 2. 余白: ↑40px →0 ↓40px ←0 */
+}
+.footer-inner {
+	width: 960px;                /* 3. 幅: 960px */
+	margin: 0 auto 0 auto;       /* 4. マージン: ↑0 →auto ↓0 ←auto ※中心寄せ */
+}
+.footer-contents {
+	overflow: hidden;            /* 9. はみ出し: 隠す */
+}
+.footer-contents a {
+	color: #ffffff;              /* 5. 文字色: #ffffff */
+	text-decoration: none;       /* 6. 文字装飾: なし */
+	font-size: 14px;
+}
+.footer-info {
+	float: left;                 /* 7. フロート: 左寄せ */
+	overflow: hidden;            /* 12. はみ出し: 隠す */
+	width: 400px;                /* 8. 幅: 300px */
+}
+.footer-info li {
+	float: left;                 /* 10. フロート: 左寄せ */
+	width: 200px;                /* 11. 幅: 150px */
+}
+.footer-sns {
+	float: right;                /* 13. フロート: 右寄せ*/
+	overflow: hidden;            /* 17. はみ出し: 隠す*/
+	width: 140px;                /* 14. 幅: 140px */
+}
+.footer-sns li {
+	float: left;                 /* 15. フロート: 左寄せ*/
+	width: 40px;                 /* 16. 幅: 40px */
+	margin: 0 0 0 10px;          /* 18. マージン: ↑0 →0 ↓0 ←40px */
+}
+.footer-sns li:first-child {
+	margin: 0;                   /* 19. マージン: 0 */
+}
+
+/* 20. Twitterアイコン */
+.icon-tw {
+	background-image: url(/img/common/twitter.png); /* 背景画像指定 */
+	background-repeat: no-repeat;                   /* 背景画像繰り返し指定 */
+	width: 40px;                                    /* 幅 */
+	height: 40px;                                   /* 高さ */
+	display: block;                                 /* aタグなので大きさを指定するためにブロック要素とする */
+	text-indent: -9999px;                           /* 文字の位置を画面外に飛ばす */
+	overflow: hidden;                               /* 飛ばした文字が見えないようにはみ出た部分を隠す */
+}
+
+/* 21. Facebookアイコン */
+.icon-fb {
+	background-image: url(/img/common/facebook.png);
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+/* 22. Google plusアイコン */
+.icon-gp {
+	background-image: url(/img/common/google.png);
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+/* 23. コピーライト */
+.copyright {
+	color: #ffffff;
+	text-align: right;
+}
+
+
+/*/!***********************************************************************!/*/
+/*/!* MAPページ *!/*/
+/*/!**/
+/*・作業内容*/
+/* 1. ビジュアル部分の指定 */
+/* 2. ビジュアル部分の見出しの設定 */
+/* 3. コンテンツ部分の設定 */
+/* 4. マップ部分、テキスト部分を囲う部分の設定 */
+/* 5. テキスト部分の設定 */
+/* 6. マップ部分の設定 */
+/* 7. 表部分(table)の設定 */
+
+/* 1. ビジュアル部分の指定 */
+.sub-kv {
+	background-image: url(/img/map/kv.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+
+/* 2. ビジュアル部分の見出しの設定 */
+.sub-kv-head {
+	color: #ffffff;
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	margin: -30px 0 0 0;
+}
+
+/* 3. コンテンツ部分の設定 */
+.sub-contents-inner {
+	width: 960px;
+	margin: 0 auto 0 auto;
+	padding: 40px 0 40px 0;
+}
+
+/* 4. マップ部分、テキスト部分を囲う部分の設定 */
+.map-wrap {
+	overflow: hidden;
+}
+
+/* 5. テキスト部分の設定*/
+.map-info {
+	float: left;
+	width: 340px;
+}
+.map-info-head {
+	margin-top: 30px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.map-info-head:first-child {
+	margin-top: 0;
+}
+.map-info dl {
+	overflow: hidden;
+	margin: 15px 0 0 0;
+}
+.map-info dt {
+	float: left;
+	width: 90px;
+}
+.map-info dd {
+	float: left;
+	width: 250px;
+}
+
+/* 6. マップ部分の設定 */
+.map-img {
+	float: right;
+	width: 600px;
+}
+
+/* 7. 表部分(table)の設定 */
+.map-table {
+	width: 100%;
+	border-top: 1px solid #ccc;
+	margin: 30px 0 0 0;
+}
+.map-table th {
+	border-bottom: 1px solid #ccc;
+	background-color: #f0f0f0;
+	padding: 5px 0 5px 0;
+}
+.map-table td {
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+}
+
+
+
+
+

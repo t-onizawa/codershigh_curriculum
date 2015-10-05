@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+img {
+	vertical-align: middle;
+}
+
+.wrapper {
+	width: 950px;
+	margin: 0 auto 0 auto;
+}
+
+.contents-inner-side,
+.contents-inner-main,
+.contents-inner-pr {
+	float: left;
+}
+
+.contents-inner {
+	overflow: hidden;
+}
+
+.contents-inner-main,
+.contents-inner-pr {
+	margin: 0 0 0 9px;
+}
+
+.side-section,
+.main-section,
+.pr-section {
+	margin: 10px 0 0 0;
+}
+
+.side-section:first-child,
+.main-section:first-child,
+.pr-section:first-child {
+	margin: 0;
+}
+
+
+
+
+

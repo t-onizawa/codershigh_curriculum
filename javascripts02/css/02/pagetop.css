@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+body {
+    background-color: #eee;
+}
+.pagetop-sec {
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+.pagetop-headline {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #aaa;
+    padding: 5px 0;
+}
+.pagetop-sec p {
+    margin-top: 20px;
+}
+.pagetop {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+.pagetop a {
+    display: block;
+    padding: 10px;
+    background-color: #40aeab;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+}
+.pagetop a:hover {
+    background-color: #56ebe7;
+}

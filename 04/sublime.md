@@ -1,0 +1,10 @@
+- Emmet
+- IMESupport
+- Hayaku
+- BracketHighlighter
+- SideBarEnhancements
+- Color Highlighter
+- HTML5
+- CSS Snippets
+- ConvertToUTF8
+- traling spaces
