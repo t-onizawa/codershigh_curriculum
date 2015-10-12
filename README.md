@@ -12,8 +12,7 @@ http://www.sublimetext.com/3
 
 3.「MAMP」のダウンロードをお願いします。(インストールされていない方のみ)
 https://www.mamp.info/en/downloads/
-
-※Mac OS X か Windowsを選択してダウンロード・インストールしておいてください。
+  ※Mac OS X か Windowsを選択してダウンロード・インストールしておいてください。
 
 4.facebookグループでも資料を展開しています。必ず事前にダウンロードしておいて下さい。(全員)
 
