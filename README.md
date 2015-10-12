@@ -1,11 +1,11 @@
 # 事前の準備
 1.Google Chrome・Firefox いずれかのブラウザをインストールしておいてください。(インストールされていない方のみ)
 
-	- Google Chrome
+	・ Google Chrome
 	 https://www.google.co.jp/chrome/browser/desktop/
-
-	- Firefox 
-	https://www.mozilla.org/ja/firefox/
+	 
+	・Firefox 
+	 https://www.mozilla.org/ja/firefox/
 
 2.「Sublime Text 3」（無料）を以下からダウンロード・インストールして使える状態にしておいてください。(インストールされていない方のみ)
 http://www.sublimetext.com/3
