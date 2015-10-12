@@ -1,3 +1,23 @@
+# 事前の準備
+1. Google Chrome・Firefox いずれかのブラウザをインストールしておいてください。
+- chrome
+https://www.google.co.jp/chrome/browser/desktop/
+- Firefox
+https://www.mozilla.org/ja/firefox/
+
+2.「Sublime Text 3」（無料）を以下からダウンロード・インストールして使える状態にしておいてください。(インストールされていない方のみ)
+http://www.sublimetext.com/3
+
+3.「MAMP」のダウンロードをお願いします。(インストールされていない方のみ)
+https://www.mamp.info/en/downloads/
+※Mac OS X か Windowsを選択してダウンロード・インストールしておいてください。
+
+4.facebookグループでも資料を展開しています。必ず事前にダウンロードしておいて下さい。(全員)
+
+## PCについて
+ご自分でお使いのWindowsかMacのノートPCなどを持参してください。
+※ご自分のノートＰＣがない方などは事前にお知らせください。1～2台であればお貸しできる可能性があります。
+
 # カリキュラム一覧
 
 - 01 | 第一回勉強会 created_第1回勉強会【初心者】WEBとブラウザとhtml
