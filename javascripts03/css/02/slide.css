@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.slide {
+    width: 400px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin: 20px auto 0;
+}
+.slide-headline {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #ccc;
+}
+.slide-text {
+    padding: 10px;
+    display: none;
+}
+
+.slide:first-child {
+    margin-top: 0;
+}
+.slide-text + .slide-headline {
+    border-top: 1px solid #aaa;
+}
