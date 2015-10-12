@@ -1,10 +1,10 @@
 # 事前の準備
 1.Google Chrome・Firefox いずれかのブラウザをインストールしておいてください。(インストールされていない方のみ)
 
-	・ Google Chrome
+・Google Chrome
 	 https://www.google.co.jp/chrome/browser/desktop/
 	 
-	・Firefox 
+・Firefox 
 	 https://www.mozilla.org/ja/firefox/
 
 2.「Sublime Text 3」（無料）を以下からダウンロード・インストールして使える状態にしておいてください。(インストールされていない方のみ)
@@ -12,6 +12,7 @@ http://www.sublimetext.com/3
 
 3.「MAMP」のダウンロードをお願いします。(インストールされていない方のみ)
 https://www.mamp.info/en/downloads/
+
 ※Mac OS X か Windowsを選択してダウンロード・インストールしておいてください。
 
 4.facebookグループでも資料を展開しています。必ず事前にダウンロードしておいて下さい。(全員)
