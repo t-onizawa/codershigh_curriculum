@@ -1,7 +1,9 @@
 # 事前の準備
 1.Google Chrome・Firefox いずれかのブラウザをインストールしておいてください。(インストールされていない方のみ)
+
 	- chrome
 https://www.google.co.jp/chrome/browser/desktop/
+
 	- Firefox
 https://www.mozilla.org/ja/firefox/
 
