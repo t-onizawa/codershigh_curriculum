@@ -93,3 +93,19 @@
 .confirm-btns a:hover {
     opacity: .8;
 }
+
+.confirm {
+    display: none;
+}
+.header-menu-list {
+    display: none;
+}
+
+
+
+
+
+
+
+
+

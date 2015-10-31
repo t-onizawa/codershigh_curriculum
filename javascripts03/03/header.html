@@ -8,24 +8,24 @@
 </head>
 <body>
 <div class="wrapper">
-    
+
     <header class="header">
         <div class="header-logo">LOGO</div>
         <div class="header-menu">
             <!-- メニューボタン -->
-            <a href="javascript:void(0);" class="header-menu-btn">メニュー</a>
+            <a href="javascript:void(0);" class="header-menu-btn" id="js-menu-trigger">メニュー</a>
 
-            <!-- メニューのリスト -->
-            <ul class="header-menu-list">
+            <!-- メニューのリスト (CSSでdisplay: none;にしておく) -->
+            <ul class="header-menu-list" id="js-menu-target">
                 <li><a href="mypage.html">マイページ</a></li>
                 <li><a href="profile.html">プロフィール設定</a></li>
                 <li><a href="purchase.html">購入履歴</a></li>
-                <li><a href="">ログアウト</a></li>
+                <li><a href="javascript:void(0);" id="js-logout-trigger">ログアウト</a></li>
             </ul>
         </div>
     </header>
-    
-    
+
+
     <h1 class="page-head">ヘッダー</h1>
     <p class="page-txt">よくあるヘッダーのメニューを作ってみよう</p>
     <div class="contents">
@@ -35,17 +35,26 @@
 
 </div>
 
-<div class="confirm">
+<!-- 確認ポップアップ (CSSでdisplay: none;にしておく) -->
+<div class="confirm" id="js-logout-target">
     <div class="confirm-inner">
         <h2 class="confirm-headline">本当にログアウトしますか？</h2>
         <ul class="confirm-btns">
             <li><a href="logout.html">はい、ログアウトします</a></li>
-            <li><a href="">いいえ</a></li>
+            <li><a href="javascript:void(0);" class="js-logout-close">いいえ</a></li>
         </ul>
     </div>
-
-    <div class="confirm-bg"></div>
+    <div class="confirm-bg js-logout-close"></div>
 </div>
 
+<script src="/js/jquery.js"></script>
+<script src="/js/03/header.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
