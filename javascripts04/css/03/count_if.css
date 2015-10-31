@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.btn {
+    border: 0;
+    outline: 0;
+    background-color: #38ee47;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+.btn:hover {
+    opacity: .8;
+}
+.btn + .btn {
+    margin-top: 10px;
+}
+
+.popup {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    border: 3px solid #ccc;
+    background-color: #fff;
+    font-size: 36px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -150px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+.popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.popup-wrap {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
