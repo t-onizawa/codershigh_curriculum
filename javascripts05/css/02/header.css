@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: #1F5081;
+    border-bottom: 1px solid #333;
+}
+.header-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header-menu-btn {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.header-menu-btn:after {
+    content: "▼";
+}
+
+.header-menu-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+.header-menu-list a {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+.header-menu-list a:hover {
+    background-color: #eee;
+}
+
+.confirm-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+.confirm-inner {
+    position: fixed;
+    width: 500px;
+    height: 140px;
+    padding: 30px 0;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .26);
+    background-color: #fff;
+    text-align: center;
+    z-index: 20;
+}
+.confirm-headline {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.confirm-btns li {
+    margin: 10px auto 0;
+}
+.confirm-btns li:first-child {
+    margin-top: 0;
+}
+.confirm-btns a {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff6900;
+}
+.confirm-btns a:hover {
+    opacity: .8;
+}
