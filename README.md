@@ -42,6 +42,7 @@ https://www.mamp.info/en/downloads/
 - javascripts_native | 第8回勉強会【javascriptの基本① jQueryを使わないソース】
 - javascripts02 | 第9回勉強会【javascriptの基本②】
 - javascripts03 | 第10回勉強会【jQueryで動かす①】
+- javascripts04 | 第11回勉強会【jQueryで動かす②】
 
 # 予定スケジュール
 1. 2015/06/06 【初心者】WEBとブラウザとhtml	
