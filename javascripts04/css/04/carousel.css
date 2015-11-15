@@ -4,6 +4,44 @@ img {
     vertical-align: middle;
 }
 
+/* カルーセル全体を囲う部分 */
+.carousel {
+	position: relative;
+	width: 200px;
+	height: 132px;
+	overflow: hidden;
+}
+
+/* カルーセル本体 (ul) */
+.carousel-items {
+	width: 1000px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* ul li */
+.carousel-items li {
+	float: left;
+}
+
+/* prev ボタン */
+.carousel-btn-prev {
+	position: absolute;
+	left: 0;
+	bottom: 50px;
+	display: none;
+	z-index: 100;
+}
+
+/* next ボタン */
+.carousel-btn-next {
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	z-index: 100;
+}
 
 
 
