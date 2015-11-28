@@ -43,6 +43,7 @@ https://www.mamp.info/en/downloads/
 - javascripts02 | 第9回勉強会【javascriptの基本②】
 - javascripts03 | 第10回勉強会【jQueryで動かす①】
 - javascripts04 | 第11回勉強会【jQueryで動かす②】
+- javascripts05 | 第12回勉強会【JavaScript 変数の作成・関数の作成】
 
 # 予定スケジュール
 1. 2015/06/06 【初心者】WEBとブラウザとhtml	
