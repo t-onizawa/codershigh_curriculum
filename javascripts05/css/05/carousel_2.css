@@ -4,6 +4,45 @@ img {
     vertical-align: middle;
 }
 
+.carousel-btn-prev {
+	position: fixed;
+	top: 50%;
+	left: 0;
+	background: url(/img/05/prev.png) no-repeat center;
+	width: 80px;
+	height: 80px;
+	margin: -40px 0 0 0;
+	border: 0;
+	text-indent: -9999px;
+	display: none;
+}
+.carousel-btn-next {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	background: url(/img/05/next.png) no-repeat center;
+	width: 80px;
+	height: 80px;
+	margin: -40px 0 0 0;
+	border: 0;
+	text-indent: -9999px;
+}
+
+.carousel {
+	position: relative;
+	overflow: hidden;ccbnm
+}
+.carousel-items {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.carousel-items li {
+	float: left;
+}
+.carousel-items img {
+	width: 100%;
+}
 
 
 
