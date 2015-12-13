@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+/* ---------------------------- */
+/* RESET STYLE
+/* ---------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ---------------------------- */
+/* COMMON STYLE
+/* ---------------------------- */
+body {
+    color: #666;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, 'MS PGothic', arial, helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #F3F8FB;
+}
+
+.header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .2);
+}
+.header-inner {
+    width: 1060px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header-logo {
+    margin: 15px 0 0 0;
+    float: left;
+}
+.header-nav {
+    float: right;
+}
+.header-nav ul {
+    overflow: hidden;
+    margin: 20px 0 0 0;
+}
+.header-nav li {
+    float: left;
+    margin: 0 0 0 20px;
+}
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contents-hero {
+    background: url(/img/kv.jpg) no-repeat;
+    background-size: cover;
+    height: 780px;
+}
+.contents-catch {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    margin: 0 0 0 -530px;
+    width: 1060px;
+}
+.contents-catch-text {
+    color: #fff;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    line-height: 1.8;
+}
+
+.contents-detail {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 70px 0 115px 0;
+}
+.contents-detail-headline {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00B28A;
+    text-align: center;
+}
+.contents-feature {
+    margin: 40px 0 0 0;
+}
+.contents-feature:after {
+    content: "";
+    display: table;
+    visibility: hidden;
+    clear: both;
+}
+.contents-feature li {
+    float: left;
+    width: 250px;
+    margin: 0 0 0 50px;
+    padding: 0 0 0 60px;
+    background: url(/img/icon_sample_01.png) no-repeat left top;
+}
+.contents-feature li:first-child {
+    margin: 0;
+}
+.contents-feature-headline {
+    font-size: 18px;
+    font-weight: bold;
+}
+.contents-feature-text {
+    margin: 30px 0 0 0;
+}
+
+.footer {
+    background-color: #1DA78F;
+    padding: 50px 0;
+    border-top: 4px solid #000020;
+}
+.footer-inner {
+    width: 1060px;
+    margin: 0 auto;
+}
+.footer-inner:after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden;
+}
+.footer-logo {
+    float: left;
+}
+.footer-nav {
+    margin: 5px 0 0 200px;
+    float: left;
+}
+.footer-nav:after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden;
+}
+.footer-nav li {
+    float: left;
+    margin: 0 0 0 20px;
+}
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-sns {
+    float: right;
+}
+.footer-sns:after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden;
+}
+.footer-sns li {
+    float: left;
+    margin: 0 0 0 10px;
+}
+.icon-footer-sns {
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+    display: block;
+}
+.icon-footer-twitter {
+    background: url(/img/icon_twitter.png) no-repeat;
+}
+.icon-footer-facebook {
+    background: url(/img/icon_facebook.png) no-repeat;
+}
